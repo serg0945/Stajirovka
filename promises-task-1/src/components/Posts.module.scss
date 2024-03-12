@@ -1,0 +1,50 @@
+.posts__content{
+    margin: 25px;
+
+    .posts__block > button{
+        background-color: aqua;
+    }
+
+    .posts__blockBtnsAll > button{
+        margin: 0 5px;
+    }
+}
+
+.post{
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #c7c7c7;
+    border-radius: 5px;
+
+    &__block{
+        display: flex;
+        gap: 5px
+    }
+
+    &__title{
+        flex-grow: 2;
+        margin: 0;
+    }
+
+    &__body{
+        margin: 15px 0 0 0;
+    }
+}
+
+.post__btnScroll{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    &__next::after{
+        content: "<";
+    }
+    
+    &__prev::after{
+        content: ">";
+    }
+
+    &__count{
+        padding-top: 3px;
+    }
+}
