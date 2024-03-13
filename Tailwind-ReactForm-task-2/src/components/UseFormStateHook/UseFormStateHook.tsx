@@ -30,7 +30,7 @@ export const UseFormStateHook = () => {
         createPortal(
           <img
             src={mazik}
-            className="absolute bottom-28 z-50 mb-[275px] ml-96"
+            className="absolute bottom-28 z-50 mb-[80px] ml-96"
           ></img>,
           document.body,
         )}

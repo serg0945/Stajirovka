@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Selection } from "@/components/Selection/Selection";
-import { UseControllerHook } from "@/components/UseControllerHook/UseControllerHook";
-import { UseFieldArrayHook } from "@/components/UseFieldArrayHook/UseFieldArrayHook";
-import { UseFormContextHook } from "@/components/UseFormContextHook/UseFormContextHook";
-import { UseFormHook } from "@/components/UseFormHook/UseFormHook";
-import { UseWatchHook } from "@/components/UseWatchHook/UseWatchHook";
-import { UseFormStateHook } from "@/components/UseFormStateHook/UseFormStateHook";
+import { UseControllerHook } from "@/components/UseControllerHook";
+import { UseFieldArrayHook } from "@/components/UseFieldArrayHook";
+import { UseFormContextHook } from "@/components/UseFormContextHook";
+import { UseFormHook } from "@/components/UseFormHook";
+import { UseWatchHook } from "@/components/UseWatchHook";
+import { UseFormStateHook } from "@/components/UseFormStateHook";
 import { Form } from "@/components/Form/Form";
 import { FormProvider, useForm } from "react-hook-form";
 function App() {
