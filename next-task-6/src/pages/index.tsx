@@ -1,23 +1,25 @@
-import LogoPreview from '@/shared/assets/logo-preview.svg'
 import Image from 'next/image'
-import { useState } from 'react'
+import logo from '../shared/assets/logo-preview.svg'
 import Link from 'next/link'
 
 const HomePage = () => {
-  const sectionValue = ['characters', 'locations', 'episodes']
-  let [sectionCounter, setSectionCounter] = useState(0)
-  let section = sectionValue[sectionCounter]
-  const handleCount = (count: number) => {
-    setSectionCounter(sectionCounter < 2 && sectionCounter > -1 ? sectionCounter + count : 0)
-    return sectionCounter
-  }
   return (
-    <div className='px-[150px] py-6 bg-white'>
-      <Image src={LogoPreview} alt='logo-preview'></Image>
-      {/* <button className="after:content-['<']" onClick={() => handleCount(-1)}></button> */}
-      <Link href={section}>{section}</Link>
-      <button className="after:content-['>']" onClick={() => handleCount(1)}></button>
-      <p>{sectionCounter}</p>
+    <div className='px-[150px] py-10 bg-white flex flex-col gap-6 items-center'>
+      <Image src={logo} alt='plogo' />
+      <div className='py-10'>
+        <p className='pb-10 text-center'>Change your path: </p>
+        <div className='flex gap-2'>
+          <Link className='p-3 border-2 border-gray-300 rounded-lg bg-gray-100' href='/characters'>
+            Characters
+          </Link>
+          <Link className='p-3 border-2 border-gray-300 rounded-lg bg-gray-100' href='/episodes'>
+            Episodes
+          </Link>
+          <Link className='p-3 border-2 border-gray-300 rounded-lg bg-gray-100' href='/locations'>
+            Locations
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

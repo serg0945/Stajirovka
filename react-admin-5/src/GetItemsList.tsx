@@ -5,7 +5,7 @@ export const GetItemsList = () => {
     <>
       <List>
         <Datagrid rowClick='show'>
-          <TextField source='name' />
+          <TextField source='name' label='Имя' />
           <TextField source='id' />
           <TextField source='year' />
           <EditButton />

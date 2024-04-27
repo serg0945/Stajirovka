@@ -1,4 +1,4 @@
-import { Footer } from './Footer'
+import { ButtonScrollLayout } from '@/shared/ui'
 import { Header } from './Header'
 import { ReactNode, FC } from 'react'
 
@@ -10,8 +10,8 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
+      <ButtonScrollLayout coordinate={0} />
       {children}
-      <Footer />
     </>
   )
 }

@@ -1,5 +1,7 @@
 import { ParsedUrlQuery } from 'querystring'
 
+export type Nullable<T> = T | null
+
 export type Character = {
   name: string
   image: string
